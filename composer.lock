@@ -1,0 +1,122 @@
+{
+    "_readme": [
+        "This file locks the dependencies of your project to a known state",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
+        "This file is @generated automatically"
+    ],
+    "content-hash": "8c9dbc664f8a3ddcb0f3b6048395dfec",
+    "packages": [
+        {
+            "name": "mongodb/mongodb",
+            "version": "1.4.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/mongodb/mongo-php-library.git",
+                "reference": "bd148eab0493e38354e45e2cd7db59b90fdcad79"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/mongodb/mongo-php-library/zipball/bd148eab0493e38354e45e2cd7db59b90fdcad79",
+                "reference": "bd148eab0493e38354e45e2cd7db59b90fdcad79",
+                "shasum": ""
+            },
+            "require": {
+                "ext-hash": "*",
+                "ext-json": "*",
+                "ext-mongodb": "^1.5.0",
+                "php": ">=5.5"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^4.8.36 || ^6.4"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.4.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "MongoDB\\": "src/"
+                },
+                "files": [
+                    "src/functions.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "Apache-2.0"
+            ],
+            "authors": [
+                {
+                    "name": "Jeremy Mikola",
+                    "email": "jmikola@gmail.com"
+                },
+                {
+                    "name": "Derick Rethans",
+                    "email": "github@derickrethans.nl"
+                },
+                {
+                    "name": "Katherine Walker",
+                    "email": "katherine.walker@mongodb.com"
+                }
+            ],
+            "description": "MongoDB driver library",
+            "homepage": "https://jira.mongodb.org/browse/PHPLIB",
+            "keywords": [
+                "database",
+                "driver",
+                "mongodb",
+                "persistence"
+            ],
+            "time": "2018-07-18T14:33:41+00:00"
+        },
+        {
+            "name": "yosmy/mongo",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/yosmy/mongo.git",
+                "reference": "013dc7796da205039711574a9dd0dc6390c2cf7c"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/yosmy/mongo/zipball/013dc7796da205039711574a9dd0dc6390c2cf7c",
+                "reference": "013dc7796da205039711574a9dd0dc6390c2cf7c",
+                "shasum": ""
+            },
+            "require": {
+                "ext-mongodb": "*",
+                "mongodb/mongodb": "~1",
+                "php": ">=7.2"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Yosmy\\Mongo\\": [
+                        "src"
+                    ]
+                }
+            },
+            "support": {
+                "source": "https://github.com/yosmy/mongo/tree/master",
+                "issues": "https://github.com/yosmy/mongo/issues"
+            },
+            "time": "2019-05-08T17:34:48+00:00"
+        }
+    ],
+    "packages-dev": [],
+    "aliases": [],
+    "minimum-stability": "dev",
+    "stability-flags": {
+        "yosmy/mongo": 20
+    },
+    "prefer-stable": true,
+    "prefer-lowest": false,
+    "platform": {
+        "php": ">=7.2",
+        "ext-mongodb": "*",
+        "ext-json": "*"
+    },
+    "platform-dev": []
+}
