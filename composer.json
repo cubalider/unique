@@ -1,5 +1,5 @@
 {
-    "name": "yosmy/uniqueness-user",
+    "name": "yosmy/uniqueness",
     "description": "",
     "license": "MIT",
     "authors": [
@@ -10,14 +10,11 @@
     ],
     "require": {
         "php": ">=7.2",
-        "ext-mongodb": "*",
-        "ext-json": "*",
-        "mongodb/mongodb": "~1",
         "yosmy/mongo": "@dev"
     },
     "autoload": {
         "psr-4": {
-            "Yosmy\\Uniqueness\\": [
+            "Yosmy\\": [
                 "src"
             ]
         }

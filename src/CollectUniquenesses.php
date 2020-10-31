@@ -1,42 +1,42 @@
 <?php
 
-namespace Yosmy\Uniqueness;
+namespace Yosmy;
 
 /**
  * @di\service()
  */
-class CollectUsers
+class CollectUniquenesses
 {
     /**
-     * @var ManageUserCollection
+     * @var ManageUniquenessCollection
      */
     private $manageCollection;
 
     /**
-     * @param ManageUserCollection $manageCollection
+     * @param ManageUniquenessCollection $manageCollection
      */
     public function __construct(
-        ManageUserCollection $manageCollection
+        ManageUniquenessCollection $manageCollection
     ) {
         $this->manageCollection = $manageCollection;
     }
 
     /**
-     * @param string[] $ids
-     * @param int      $skip
-     * @param int      $limit
+     * @param string[]|null $users
+     * @param int|null      $skip
+     * @param int|null      $limit
      *
-     * @return Users
+     * @return Uniquenesses
      */
     public function collect(
-        ?array $ids,
+        ?array $users,
         ?int $skip,
         ?int $limit
-    ) {
+    ): Uniquenesses {
         $criteria = [];
 
-        if ($ids !== null) {
-            $criteria['_id'] = ['$in' => $ids];
+        if ($users !== null) {
+            $criteria['_id'] = ['$in' => $users];
         }
 
         $options = [];
@@ -52,6 +52,6 @@ class CollectUsers
             $options
         );
 
-        return new Users($cursor);
+        return new Uniquenesses($cursor);
     }
 }
